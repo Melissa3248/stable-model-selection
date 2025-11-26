@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/maadrian/stable_model_selection/compute_coefficients_kmeans.py", line 49, in <module>
+    X = np.load(f"{args.data_filepath}/clusters{args.dataset_idx}.npy").astype(np.float32)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maadrian/miniconda3/lib/python3.11/site-packages/numpy/lib/npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/clusters091225/clusters0.npy'
+kmeans
+bootstrap kmeans
+kmeans
+bootstrap kmeans
+kmeans
+bootstrap kmeans
+/var/spool/slurmd/job570466/slurm_script: line 6: python: command not found

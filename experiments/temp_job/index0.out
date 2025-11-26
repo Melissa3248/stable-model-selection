@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/maadrian/stable_model_selection/experiments/compute_coefficients.py", line 102, in <module>
+    save_fitted_coefficients(X, tspan, "ensemble_sindy", None, args.dataset_idx, args.results_filepath)
+  File "/home/maadrian/stable_model_selection/experiments/compute_coefficients.py", line 21, in save_fitted_coefficients
+    base_coef = compute_coefficients(X,params, tspan = tspan)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/maadrian/stable_model_selection/experiments/model_selection.py", line 331, in compute_coefficients
+    model.fit(X, t=tspan, 
+    ^^^^^^^^^^^^^^^^^^^^^
+TypeError: SINDy.fit() got an unexpected keyword argument 'ensemble'

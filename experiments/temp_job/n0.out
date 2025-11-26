@@ -1,0 +1,10 @@
+usage: compute_coefficients.py [-h] [--dataset_idx DATASET_IDX]
+                               [--config_filepath CONFIG_FILEPATH]
+                               [--solver SOLVER]
+                               [--data_filepath DATA_FILEPATH]
+                               [--results_filepath RESULTS_FILEPATH] [--J J]
+compute_coefficients.py: error: unrecognized arguments: --sindy_or_lasso lasso
+0
+10
+20
+152.977980064

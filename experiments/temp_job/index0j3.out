@@ -1,0 +1,5 @@
+kmeans
+bootstrap kmeans
+kmeans
+bootstrap kmeans
+/var/spool/slurmd/job570469/slurm_script: line 6: python: command not found

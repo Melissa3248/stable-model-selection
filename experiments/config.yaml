@@ -1,0 +1,109 @@
+#######################
+#        LASSO        #
+#######################
+lasso: &lasso
+  Lambda: 0.5 
+  solver: "lasso"
+  tspan: None
+  poly_order: None
+  bootstrap: False
+  m: None
+  B: None
+
+bootstrap_lasso: &bootstrap_lasso
+  Lambda: 0.5 
+  solver: "lasso"
+  tspan: None
+  poly_order: None
+  bootstrap: True
+  m: 25  
+  B: 10000 
+
+#########################
+#         SINDy         #
+#########################
+
+sindy: &sindy
+  Lambda: 0.01 
+  tol_optim: 0.18 
+  solver: "sindy"
+  poly_order: 2
+  bootstrap: False
+  m: None
+  B: None
+
+ensemble_sindy: &ensemble_sindy
+  Lambda: 0.01 
+  tol_optim: 0.18 
+  solver: "sindy"
+  poly_order: 2
+  bootstrap: True
+  m: 15 
+  B: 7000 
+
+
+#########################
+#    GRAPH SELECTION    #
+#########################
+
+graph_lasso: &graph_lasso
+  Lambda: 77
+  tspan: None
+  poly_order: None
+  solver: "graph_lasso"
+  bootstrap: False
+  m: None
+  B: None
+
+bootstrap_graph_lasso: &bootstrap_graph_lasso
+  Lambda: 77
+  tspan: None
+  poly_order: None
+  solver: "graph_lasso"
+  bootstrap: True
+  m: 700
+  B: 10000
+
+######################
+#       KMEANS       #
+######################
+kmeans: &kmeans
+  Lambda: 5 #0.3 # hyperparameter to select the number of clusters based on an elbow plot
+  solver: 'kmeans'
+  max_num_clusters: 29
+  tspan: None
+  poly_order: None
+  bootstrap: False
+  m: None
+  B: None
+
+bootstrap_kmeans: &bootstrap_kmeans
+  Lambda: 5 #0.3 # hyperparameter to select the number of clusters based on an elbow plot
+  solver: "kmeans"
+  max_num_clusters: 29
+  tspan: None
+  poly_order: None
+  bootstrap: True
+  m: 25
+  B: 10000
+
+##########################
+#      Decision Tree     #
+##########################
+decision_tree: &decision_tree
+  Lambda: None
+  solver: 'decision_tree'
+  tspan: None
+  poly_order: None
+  bootstrap: False
+  m: None
+  B: None
+
+bootstrap_decision_tree: &bootstrap_decision_tree
+  Lambda: None
+  solver: "decision_tree"
+  tspan: None
+  poly_order: None
+  bootstrap: True
+  m: 40 
+  B: 10000
